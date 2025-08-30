@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   rood (kies uit zwart, rood óf blauw)
 
   #### Je focus:
-  responsive (kies uit responsive óf surface plane)
+  surface plane (kies uit responsive óf surface plane)
  
 </details>
 
