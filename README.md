@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ziyun Ouyang (vervangen door jouw naam)
 
   #### Je startniveau:
-  rood (kies uit zwart, rood óf blauw)
+  blauw (kies uit zwart, rood óf blauw)
 
   #### Je focus:
   surface plane (kies uit responsive óf surface plane)
@@ -36,15 +36,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Spotify/ homepagina met bewegende visuals die passen bij het muziekgenre. Bijvoorbeeld Chill/Lo-fi: rustige, golvende kleuren.
-
+  Ziggo/ homepagina: achtergrond van kleur veranderen bij het kiezen van genre
   #### Screenshot(s) van de eerste pagina (small screen): 
   homepage
-  <img src="images/spotify_homepage.png" width="375px" alt="Startpagina met aanbevolen playlists, nieuwe muziek en persoonlijke tips. Kleurig en overzichtelijk, met banners en knoppen om muziek te openen.">
+  <img src="images/ziggo_homepage.png" width="375px" alt="Startpagina met aanbevolen playlists, nieuwe muziek en persoonlijke tips. Kleurig en overzichtelijk, met banners en knoppen om muziek te openen.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   login page
-  <img src="images/spotify_loginpage.png" width="375px" alt="Spotify login page (desktop): Pagina om in te loggen, met daarnaast een overzicht van aanbevolen nummers en playlists.">
+  <img src="images/ziggo_agenda.png" width="375px" alt="Spotify login page (desktop): Pagina om in te loggen, met daarnaast een overzicht van aanbevolen nummers en playlists.">
  
 </details>
 
@@ -57,7 +56,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+1.Kopniveau's:
+-Er is geen heading 1 aanwezig, het begint direct bij heading 2.
+-Als je probeert naar verschillende koppen te navigeren, slaat de screenreader sommige headings over, omdat deze volgens de screenreader niet bestaan.
+-Klik je bijvoorbeeld op een heading 3, dan wordt je doorgestuurd naar "Uitgelicht". Klik je opnieuw, dan verschuift het terug naar de vorige kop. ("3" toets)
+-Heading 4 toont informatie over concerten, maar je wordt er niet naartoe geleid.
+-Heading 5 en 6 zijn niet aanwezig.
 
+2.Navigatieproblemen:
+-De "K" toets springt naar "Bekijk evenement". Naar het einde van de pagina verspringt het naar de footer, waar de agenda start en het rijtje met iconen eindigt bij "Accessibility". (bodem van de footer)
+-Na "Accessibility" stopt de screenreader, in plaats van opnieuw alle links af te gaan. 
+-Gebruik je de pijl omhoog, dan werkt het wel correct.
+-Met "K" + spatie” ga je naar de volgende link. Bijvoorbeeld: bij "Lees meer" en spatie kom je bij "Meer info over merchandise". Dit geldt ook voor artiesten, maar -tickets kan je bijvoorbeeld niet selecteren.
+
+3.Ticket navigatie:
+-Je kunt naar alle beschikbare links gaan, behalve het selecteren van tickets.
+-Het nadeel is dat je ze allemaal moet afgaan er is geen optie om direct een specifieke ticket te selecteren.
+
+Kortom: de pagina heeft problemen met kopstructuur en screenreader navigatie, waardoor sommige onderdelen niet goed bereikbaar zijn of verwarrend werken.
 </details>
 
 
