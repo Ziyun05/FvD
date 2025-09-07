@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ziggo/ homepagina: achtergrond van kleur veranderen bij het kiezen van genre
   #### Screenshot(s) van de eerste pagina (small screen): 
   homepage
-  <img src="images/ziggo_homepage.png" width="375px" alt="Startpagina met aanbevolen playlists, nieuwe muziek en persoonlijke tips. Kleurig en overzichtelijk, met banners en knoppen om muziek te openen.">
+  <img src="readme-images/ziggo_homepage.png" width="375px" alt="Startpagina met aanbevolen playlists, nieuwe muziek en persoonlijke tips. Kleurig en overzichtelijk, met banners en knoppen om muziek te openen.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   login page
-  <img src="images/ziggo_agenda.png" width="375px" alt="Spotify login page (desktop): Pagina om in te loggen, met daarnaast een overzicht van aanbevolen nummers en playlists.">
+  <img src="readme-images/ziggo_agenda.png" width="375px" alt="Spotify login page (desktop): Pagina om in te loggen, met daarnaast een overzicht van aanbevolen nummers en playlists.">
  
 </details>
 
@@ -79,7 +79,7 @@ Bij het checken van de Ziggo Dome-website volgens de WCAG-richtlijnen valt het o
 Tekst & content: Over het algemeen goed, de teksten zijn duidelijk en netjes opgebouwd.
 Mobiel & touch: Werkt grotendeels prima op je telefoon of tablet, navigeren gaat soepel.
 Afbeeldingen: Hier klopt het niet helemaal: bijvoorbeeld er is vaak geen duidelijke alt-tekst, wat voor mensen met schermlezers lastig kan zijn.
-Lijsten: Ze gebruiken bijna geen echte lijst-elementen (<ul> of <ol>), waardoor het voor sommige gebruikers minder overzichtelijk is.
+Lijsten: Ze gebruiken bijna geen echte lijst-elementen (ul of ol), waardoor het voor sommige gebruikers minder overzichtelijk is.
 
 </details>
 
@@ -91,13 +91,13 @@ Lijsten: Ze gebruiken bijna geen echte lijst-elementen (<ul> of <ol>), waardoor 
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="images/breakdownSchetsGeheel.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownSchetsGeheel.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="images/breakdown1_filter.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdown1_carrousel.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="images/breakdown2_carrousel (2).png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown2_filter.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
