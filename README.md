@@ -74,6 +74,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 -Het nadeel is dat je ze allemaal moet afgaan er is geen optie om direct een specifieke ticket te selecteren.
 
 Kortom: de pagina heeft problemen met kopstructuur en screenreader navigatie, waardoor sommige onderdelen niet goed bereikbaar zijn of verwarrend werken.
+
+Bij het checken van de Ziggo Dome-website volgens de WCAG-richtlijnen valt het op:
+Tekst & content: Over het algemeen goed, de teksten zijn duidelijk en netjes opgebouwd.
+Mobiel & touch: Werkt grotendeels prima op je telefoon of tablet, navigeren gaat soepel.
+Afbeeldingen: Hier klopt het niet helemaal: bijvoorbeeld er is vaak geen duidelijke alt-tekst, wat voor mensen met schermlezers lastig kan zijn.
+Lijsten: Ze gebruiken bijna geen echte lijst-elementen (<ul> of <ol>), waardoor het voor sommige gebruikers minder overzichtelijk is.
+
 </details>
 
 
@@ -84,13 +91,13 @@ Kortom: de pagina heeft problemen met kopstructuur en screenreader navigatie, wa
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/breakdownSchetsGeheel.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="images/breakdown1_filter.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="images/breakdown2_carrousel (2).png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
