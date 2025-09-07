@@ -79,7 +79,7 @@ Bij het checken van de Ziggo Dome-website volgens de WCAG-richtlijnen valt het o
 Tekst & content: Over het algemeen goed, de teksten zijn duidelijk en netjes opgebouwd.
 Mobiel & touch: Werkt grotendeels prima op je telefoon of tablet, navigeren gaat soepel.
 Afbeeldingen: Hier klopt het niet helemaal: bijvoorbeeld er is vaak geen duidelijke alt-tekst, wat voor mensen met schermlezers lastig kan zijn.
-Lijsten: Ze gebruiken bijna geen echte lijst-elementen (ul of ol), waardoor het voor sommige gebruikers minder overzichtelijk is.
+Lijsten: Ze gebruiken bijna geen echte lijst elementen (ul of ol), waardoor het voor sommige gebruikers minder overzichtelijk is.
 
 </details>
 
