@@ -111,8 +111,19 @@ Lijsten: Ze gebruiken bijna geen echte lijst elementen (ul of ol), waardoor het 
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Wat goed ging:
+Voor mij ging het maken van de breakdownschetsen goed. Ik vond het fijn om eerst visueel te bedenken hoe de website eruit zou zien en hoe de onderdelen zich tot elkaar verhouden. Dit gaf me een duidelijk overzicht en maakte het daarna makkelijker om met de code te werken.
 
+Wat lastig was:
+Het opzetten van de HTML vond ik lastig, vooral het structureren van de verschillende pagina’s en zorgen dat alles goed gekoppeld was. Het maken van de tweede pagina was in eerste instantie verwarrend, maar met hulp van de studentenassistente is het uiteindelijk gelukt.
+
+<img src="readme-images/homeHtmlCode1.png" width="375px" alt="Homehtml_deel 1">
+<img src="readme-images/homeHtmlCode2.png" width="375px" alt="Homehtml_deel 2">
+<img src="readme-images/homeHtmlCode3.png" width="375px" alt="Homehtml_deel 3">
+<img src="readme-images/agendaHtmlCode1.png" width="375px" alt="Homehtml_deel 1">
+
+
+s
 
   ### Agenda voor meeting
   samen met je groepje opstellen
