@@ -39,12 +39,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ziggo/ homepagina: achtergrond van kleur veranderen bij het kiezen van genre
   #### Screenshot(s) van de eerste pagina (small screen): 
   homepage
-  <img src="readme-images/ziggo_homepage.png" width="375px" alt="Startpagina met aanbevolen playlists, nieuwe muziek en persoonlijke tips. Kleurig en overzichtelijk, met banners en knoppen om muziek te openen.">
+  <img src="readme-images/ziggo_homepage.png" width="375px" alt="Ziggo homepagina met alle info">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  login page
-  <img src="readme-images/ziggo_agenda.png" width="375px" alt="Spotify login page (desktop): Pagina om in te loggen, met daarnaast een overzicht van aanbevolen nummers en playlists.">
+Agenda page
+  <img src="readme-images/ziggo_agenda.png" width="375px" alt="Een agenda met een filter/carrousel waarmee je kunt zien welke artiesten optreden.">
  
+ Website: https://www.ziggodome.nl/
 </details>
 
 
@@ -81,6 +82,11 @@ Mobiel & touch: Werkt grotendeels prima op je telefoon of tablet, navigeren gaat
 Afbeeldingen: Hier klopt het niet helemaal: bijvoorbeeld er is vaak geen duidelijke alt-tekst, wat voor mensen met schermlezers lastig kan zijn.
 Lijsten: Ze gebruiken bijna geen echte lijst elementen (ul of ol), waardoor het voor sommige gebruikers minder overzichtelijk is.
 
+<img src="readme-images/wcagList1.jpeg" width="375px" alt="WCAG-lijst_p1">
+<img src="readme-images/wcagList1.1.jpeg" width="375px" alt="WCAG-lijst_p2">
+<img src="readme-images/wcagList1.2.jpeg" width="375px" alt="WCAG-lijst_p3">
+<img src="readme-images/wcagList1.3.jpeg" width="375px" alt="WCAG-lijst_p4">
+<img src="readme-images/wcagList1.4.jpeg" width="375px" alt="WCAG-lijst_p5">
 </details>
 
 
@@ -91,7 +97,8 @@ Lijsten: Ze gebruiken bijna geen echte lijst elementen (ul of ol), waardoor het 
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdownSchetsGeheel.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownSchets_home.png" width="375px" alt="breakdown van de hele pagina">
+   <img src="readme-images/breakdownSchets_agenda.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/breakdown1_carrousel.png" width="375px" alt="breakdown van een dynamisch deel">
@@ -123,22 +130,22 @@ Het opzetten van de HTML vond ik lastig, vooral het structureren van de verschil
 <img src="readme-images/agendaHtmlCode1.png" width="375px" alt="Homehtml_deel 1">
 
 
-s
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | plaatsing van  | het groeperen van  | en ik dit    | en dan ik dat    |
+  | img in een     | tekst in het       | nog een punt | dit wil ik zeker |
+  | carasoul       | midden             | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - Header in de section, de section valt dan buiten header
   - punt 2
   - nog een punt
   - ...
@@ -146,7 +153,9 @@ s
 </details>
 
 
-
+//alt tekst artiest omschrijven //
+//Header in de section zetten// V
+//ss van wcag list//V
 
 
 ## Voortgang 2 (week 3)
