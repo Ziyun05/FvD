@@ -1,0 +1,149 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: #f6efef;
+	--color-background: #1b1b20;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+body {
+	margin: 0;
+	background-color: var(--color-background);
+	color: var(--color-text);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+	background-color: var(--color-background);
+}
+
+
+nav ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: space-around;
+}
+
+nav li {
+	text-align: center;
+}
+
+nav a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: grey;
+}
+
+nav img {
+	width: 1.5em;
+	height: auto;
+}
+
+
+
+section:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+section:nth-of-type(1) img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+section:nth-of-type(1) h1 {
+	position: absolute;
+	left: 10rem;
+	top: 18rem;
+}
+
+section:nth-of-type(1) > p {
+	position: absolute;
+	left:8em;
+	top:21rem;
+	color: grey;
+  }
+  
+  section:nth-of-type(1) > button {
+	position: absolute;
+	left:11em;
+	top: 25rem;
+	border-radius:3em;
+	color: rgb(44, 98, 152);
+  }
+
+section:nth-of-type(2) img{
+	max-width: 15em;
+	width: 50em;
+	border: 4em;
+	display: block;
+	position: relative;
+	border-radius: 1em;
+}
+
+section:nth-of-type(3) {
+	border: 5px solid #383434;
+    border-radius: 30px;
+    padding: 0.5em;
+    min-width: 200px;
+    text-align: center;
+    scroll-snap-align: center;
+    background-color: #383434; 
+}
+
+section:nth-of-type(2) ul{
+display: flex;
+overflow-x: auto;
+list-style: none;
+}
+
+
+ul.scroll {
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	list-style: none;
+
+	overscroll-behavior-x: contain;
+
+	gap: 1em;
+ 
+	scrollbar-width: thin;
+	scrollbar-color: rgb(11, 2, 2) transparent;
+}
+
+li.scroll {
+	flex-basis: 100%;
+	flex-shrink: 0;
+	scroll-snap-align: center;
+
+}

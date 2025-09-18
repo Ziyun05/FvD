@@ -153,19 +153,23 @@ Het opzetten van de HTML vond ik lastig, vooral het structureren van de verschil
 </details>
 
 
-//alt tekst artiest omschrijven //
-//Header in de section zetten// V
-//ss van wcag list//V
-
-
 ## Voortgang 2 (week 3)
 
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Wat ik lastig vond en waar ik even op vastliep, was het gebruik van nth-of-type en waar classes gebruikt mocht worden. Na de uitleg begreep ik hoe ik dit kon toepassen en kon ik vervolgens verder met het stylen van de website.
 
+<img src="readme-images/html1wk2.png" width="375px" alt="Homehtml_deel 2">
+<img src="readme-images/html2wk2.png" width="375px" alt="Homehtml_deel 2">
+<img src="readme-images/html3wk2.png" width="375px" alt="Homehtml_deel 2">
+<img src="readme-images/html4wk2.png" width="375px" alt="Homehtml_deel 2">
+<img src="readme-images/html5wk2.png" width="375px" alt="Homehtml_deel 2">
+<img src="readme-images/css1wk2.png" width="375px" alt="Csshtml_deel 1">
+<img src="readme-images/css2wk2.png" width="375px" alt="Csshtml_deel 1">
+<img src="readme-images/css3wk2.png" width="375px" alt="Csshtml_deel 1">
+<img src="readme-images/css4wk2.png" width="375px" alt="Csshtml_deel 1">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
