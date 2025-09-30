@@ -12,7 +12,7 @@
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
-<body>
+<body class="home">
 	<header>
 		<nav>
 			<ul>
@@ -25,7 +25,7 @@
 				<li>
 					<a href="index.html">
 						<img src="images/home_icon.png" alt="home">
-						<Span>Home</Span>
+						<span>Home</span>
 					</a>
 				</li>
 				<li>
@@ -40,10 +40,10 @@
 
 	<main>
 		<section>
-			<img src="images/laufey.webp" alt="vrouwelijke artiest staat bij het gordijn">
+			<img src="images/laufey.webp" alt="Poster laufey A Matter Of Time tour">
 			<h1>Laufey</h1>
 			<p>A Matter Of Time tour</p>
-			<time datetime="zondag 1 maart 2026"></time>
+			<time datetime="2026-03-01"></time>
 			<button>Bekijk evenement</button>
 		</section>
 
@@ -51,17 +51,17 @@
 			<h2>Nieuw</h2>
 			<ul>
 				<li>
-					<time datetime="20 september 2026">20 september 2026</time>
+					<time datetime="2026-09-20">20 september 2026</time>
 					<h4>The Streamers (13:30)</h4>
 					<p>The Christmas Edition</p>
 				</li>
 				<li>
-					<time datetime="20 maart 2026">20 maart 2026</time>
+					<time datetime="2026-03-20">20 maart 2026</time>
 					<h4>Tash Sultana</h4>
 					<p>Return To The Roots EU-UK Tour 2026</p>
 				</li>
 				<li>
-					<time datetime="01 maart 2026">01 maart 2026</time>
+					<time datetime="2026-03-01">01 maart 2026</time>
 					<h4>Laufey</h4>
 					<p>A Matter Of Time tour</p>
 				</li>
@@ -69,32 +69,38 @@
 		</section>
 
 
-		<section>
-			<h2>Duurzaamheid</h2>
-			<h3>Festival Bar</h3>
-			<p>We zien het als onzee verantwoording om een bezoek aan de Ziggo Dome groener te maken.</p>
+		<section class="slideshow">
+			<h2>Uitgelicht</h2>
+			<h3>Duurzaamheid</h3>
+			<p>We zien het als onze verantwoordelijkheid om een bezoek aan de Ziggo Dome groener te maken.</p>
 			<nav>
-				<a href="https://www.ziggodome.nl/eten-drinken/baut-backstage/">Lees meer</a>
+			  <a href="https://www.ziggodome.nl/eten-drinken/baut-backstage/">Lees meer</a>
 			</nav>
-			<img src="images/duurzaamheid_ziggo.png" alt="verantwoording ziggo dome">
-		</section>
+		  
+			<div class="slideshow-container">
+			  <img src="images/duurzaamheid_ziggo.png" alt="Infographic over duurzaamheid bij de Ziggo Dome">
+			  <img src="images/ziggoUitgelicht.png" alt="Infographic wordt lid bij Ziggo ">
+			  <img src="images/ziggoUitgelicht2.png" alt="Infographic jam sessie bij de Ziggo">
+			</div>
+		  </section>
+		  
 
 
 		<section>
 			<h2>Aankomende</h2>
 			<ul>
 				<li>
-					<time datetime="20 september 2025">20 september 2025</time>
+					<time datetime="2025-09-24">20 september 2025</time>
 					<h4>CHO</h4>
 					<p>Diamant uit Bijlmer</p>
 				</li>
 				<li>
-					<time datetime="23 september 2025">23 september 2025</time>
+					<time datetime="2025-09-23">23 september 2025</time>
 					<h4>VOLBEAT</h4>
 					<p>Greatest Of All Tours</p>
 				</li>
 				<li>
-					<time datetime="26 september 2025">26 september 2025</time>
+					<time datetime="2025-09-26">26 september 2025</time>
 					<h4>parcels</h4>
 					<p>Live'25 Tour</p>
 				</li>
@@ -107,25 +113,25 @@
 			<h3>Waar we zelf graag heen gaan</h3>
 			<ul>
 				<li>
-					<img src="images/theTributeLive_fav.png" alt="battle of the bands">
+					<img src="images/theTributeLive_fav.png" alt="Poster van The Tribute, live in Concert">
 					<div class="text">
-					<time datetime="16 april 2026">16 april 2026</time>
+					<time datetime="2026-04-16">16 april 2026</time>
 					<h4>The Tribute - Live in Concert</h4>
 					<button>Bekijk evenement</button>
 				</div>
 				</li>
 				<li>
-					<img src="images/songfestivalFeest_fav.png" alt="het grote songfestival feest">
+					<img src="images/songfestivalFeest_fav.png" alt=" Poster het grote songfestival feest">
 					<div class="text">
-					<time datetime="20 november 2025">20 november 2025</time>
+					<time datetime="2025-11-20">20 november 2025</time>
 					<h4>Het Grote Songfestivalfeest</h4>
 					<button>Bekijk evenement</button>
 				</div>
 				</li>
 				<li>
-					<img src="images/disturbs_fav.png" alt="een band van 4 mannen">
+					<img src="images/disturbs_fav.png" alt="Poster van de band Disturbed">
 					<div class="text">
-					<time datetime="14 oktober 2025">14 oktober 2025</time>
+					<time datetime="2025-10-14">14 oktober 2025</time>
 					<h4>Disturbed</h4>
 					<button>Bekijk evenement</button>
 				</div>
@@ -138,8 +144,22 @@
 			<p>Waar vind je de garderobes, lockers, bars en food outlets? Maak gebruik van onze interactieve plattegrond
 				om
 				alle hotspots van de Ziggo Dome te ontdekken.</p>
-			<iframe src="images/home-plattegrond-algemeen.mp4" frameborder="0"></iframe>
+				<video>
+					<source src="images/home-plattegrond-algemeen.mp4" type="video/mp4">
+				  </video>
+			<button>Nu ontdekken</button>
 		</section>
+
+
+		
+
+		<div class="font-size-controls">
+			<button id="fontDecrease">A-</button>
+			<button id="fontIncrease">A+</button>
+		  </div>
+		  
+		 
+		  
 
 		<div><img src="images/ziggoLogo.png" alt="ziggoLogo"></div>
 		<script defer src="scripts/script.js"></script>
@@ -175,17 +195,17 @@
 					<p>Huisregels</p>
 					<p>Disclaimer</p>
 					<p>Privacy</p>
-					<p>Accessibility St</p>
+					<p>Accessibility Statement</p>
 				</li>
 			</ul>
 		</section>
 
 		<section>
-				<img src="images/ziggoIcon.png" alt="ziggo icoon">
-				<img src="images/heinekenIcon.png" alt="heiniken icoon">
-				<img src="images/randstadIcon.png" alt="randstad icoon">
-				<img src ="images/cocaColaIcon.png" alt="cocacola icoon">
-				<img src="images/bacardiIcon.png" alt="bacardi icoon">
+				<img src="images/ziggoIcon.png" alt="sponser ziggo ">
+				<img src="images/heinekenIcon.png" alt="sponser heiniken">
+				<img src="images/randstadIcon.png" alt="sponser randstad">
+				<img src ="images/cocaColaIcon.png" alt="sponser cocacola">
+				<img src="images/bacardiIcon.png" alt="sponser bacardi">
 			</section>
 	</footer>
 </body>

@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Ziyun Ouyang (vervangen door jouw naam)
+  Ziyun Ouyang 
 
   #### Je startniveau:
-  blauw (kies uit zwart, rood óf blauw)
+  blauw
 
   #### Je focus:
-  surface plane (kies uit responsive óf surface plane)
+  surface plane 
  
 </details>
 
@@ -145,10 +145,10 @@ Het opzetten van de HTML vond ik lastig, vooral het structureren van de verschil
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Header in de section, de section valt dan buiten header
-  - punt 2
-  - nog een punt
-  - ...
+  - stylen in 1 css
+  - Geen gebruik maken van classes, behalve wanneer het echt niet anders kan
+  
+
 
 </details>
 
@@ -159,7 +159,11 @@ Het opzetten van de HTML vond ik lastig, vooral het structureren van de verschil
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
- Wat ik lastig vond en waar ik even op vastliep, was het gebruik van nth-of-type en waar classes gebruikt mocht worden. Na de uitleg begreep ik hoe ik dit kon toepassen en kon ik vervolgens verder met het stylen van de website.
+Wat goed ging:
+Wat goed ging, is dat de twee HTML-pagina’s al goed waren opgezet, waardoor ik kon beginnen met het stylen.
+
+Wat lastig was:
+Wat ik lastig vond en waar ik even op vastliep, was het gebruik van nth-of-type en het bepalen waar ik classes mocht gebruiken. Na de uitleg begreep ik hoe ik dit kon toepassen en kon ik verder met het stylen van de website.
 
 <img src="readme-images/html1wk2.png" width="375px" alt="Homehtml_deel 2">
 <img src="readme-images/html2wk2.png" width="375px" alt="Homehtml_deel 2">
@@ -184,10 +188,10 @@ Het opzetten van de HTML vond ik lastig, vooral het structureren van de verschil
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - werken met nth-of-type selectors
+  - alles binnen de sections plaatsen
+  - gebruik van nth-child
+
 
 </details>
 
@@ -201,7 +205,32 @@ Het opzetten van de HTML vond ik lastig, vooral het structureren van de verschil
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+ 1. Header & navigatie
+-Op de homepagina geeft de screenreader 3 items in de header/nav aan.
+-Img worden correct voorgelezen, inclusief wat erop staat.
+-Koppen worden in HTML-volgorde voorgelezen: van h1 tot h4.
+-Buttons worden duidelijk aangegeven, inclusief de inhoud.
+
+2. Nieuw-sectie
+-Data, artiest en type tour worden correct voorgelezen.
+-Navigatie met de → toets gaat niet door naar het volgende blok; alleen via tab wordt het hele blok geselecteerd en voorgelezen.
+
+3. Iframe
+-Bij selectie speelt het iframe af; spatie-toets start/stop de content.
+
+4. Footer
+-Alles wordt goed voorgelezen, inclusief iconen en sponsors.
+
+5. Agenda & filter
+-Filter bovenin werkt goed; alles wordt correct voorgelezen.
+-Artiestenlijst wordt per artiest voorgelezen; het hele blok wordt niet tegelijk gepakt zoals bij home.
+
+Kortom: screenreader werkt grotendeels goed, maar bij navigatie tussen blokken, nieuw-sectie en artiesten op de agenda zijn er beperkingen.
+<img src="readme-images/wcagList2.1.jpg" width="375px" alt="WCAG-lijst_p1">
+<img src="readme-images/wcagList2.2.jpg" width="375px" alt="WCAG-lijst_p2">
+<img src="readme-images/wcagList2.3.jpg" width="375px" alt="WCAG-lijst_p3">
+<img src="readme-images/wcagList2.4.jpg" width="375px" alt="WCAG-lijst_p4">
+<img src="readme-images/wcagList2.5.jpg" width="375px" alt="WCAG-lijst_p5">
 
 </details>
 
@@ -215,7 +244,11 @@ Het opzetten van de HTML vond ik lastig, vooral het structureren van de verschil
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Wat goed ging:
+Wat goed ging, is dat de basis van de CSS al stond, zoals de achtergrondkleur. Door de opzet van de HTML begon de pagina al meer op een echte website te lijken.
+
+Wat minder goed ging:
+Wat minder goed ging, was het stylen met nth-of-type selectors. Dit was erg verwarrend, waardoor het werk soms stroef verliep.
 
 
   ### Agenda voor meeting
@@ -231,10 +264,10 @@ Het opzetten van de HTML vond ik lastig, vooral het structureren van de verschil
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Positioneren van datum met grid
+  - Gebruik maken van margin-top/margin-bottom
+  - Gebruik position absolute om elementen vast te zetten
+
 
 </details>
 
@@ -248,21 +281,31 @@ Het opzetten van de HTML vond ik lastig, vooral het structureren van de verschil
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/home1Wk3.png" width="375px" alt="homePagina">
+  <img src="readme-images/home2Wk3.png" width="375px" alt="homePagina">
+  <img src="readme-images/home3Wk3.png" width="375px" alt="homePagina">
+  <img src="readme-images/home4Wk3.png" width="375px" alt="homePagina">
+  <img src="readme-images/home5Wk3.png" width="375px" alt="homePagina">
+  <img src="readme-images/home6Wk3.png" width="375px" alt="homePagina">
+  <img src="readme-images/agenda1Wk3.png" width="375px" alt="agendaPagina">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+ Tijdens het maken van mijn website heb ik geleerd over het gebruik van nth-of-type selectors. In het begin was het lastig, omdat je hiermee elementen selecteert op basis van hun positie binnen een bepaald type, zoals het tweede <section> of derde <li>. Dit was vooral handig omdat ik zo min mogelijk classes mocht gebruiken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+
+  <img src="readme-images/nth-of-type.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Tijdens het stylen van mijn website heb ik geprobeerd om CSS Grid te gebruiken om de onderdelen netjes te positioneren. Dit bleek echter nog best ingewikkeld, waardoor ik Grid nauwelijks heb kunnen toepassen en vooral heb gewerkt met Flexbox en positioneren.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+De filteroptie staat inmiddels wel op de pagina, maar werkt nog niet helemaal zoals bedoeld. Dit komt doordat ik voor deze functionaliteit DOM-manipulatie heb toegepast, die nog niet volledig functioneert. 
+
+Daarnaast wil ik onderzoeken waarom mijn header scheef staat. Het lijkt te maken te hebben met positionering en marges. Ook bij de sectie met artiesten lukt het niet om de <h4> en <p> elementen correct te positioneren. Met vele pogingen werken de oplossingen niet, zelfs met externe bronnen werkt het niet.
+
+  <img src="readme-images/filteroptie.png" width="375px" alt="filteroptie">
 </details>
-
 
 
 
@@ -276,8 +319,19 @@ Het opzetten van de HTML vond ik lastig, vooral het structureren van de verschil
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+
+- [Element click event](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) – Hoe je klik-events toevoegt aan HTML-elementen met JavaScript.  
+- [CSS Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) – Uitleg van positioneringsmethodes (`static`, `relative`, `absolute`, `fixed`, `sticky`).  
+- [CSS Variables en Themes](https://www.freecodecamp.org/news/how-to-easily-create-themes-with-css-variables-2d0f4cfa5b9a/) – Werken met CSS-variabelen voor kleuren en thema’s.  
+- [Window scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY) – Huidige scrollpositie van de pagina meten.  
+- [CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions) – Vloeiende veranderingen van CSS-stijlen.  
+- [Element classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) – Dynamisch classes toevoegen, verwijderen of toggelen.  
+- [Window setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout) – Tijdvertragingen in JavaScript toepassen.  
+- [CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations) – CSS-animaties maken met keyframes.  
+- [Simple auto-playing slideshow](https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/) – Voorbeeld van een automatisch afspelende slider.  
+- [Grid/Flex voorbeeld](https://codepen.io/shooft/pen/vENdvzK) – Voorbeeld van combinatie van CSS Grid en Flexbox.  
+- [Interactie filter demo](https://chatgpt.com/share/68db2b32-9a58-8006-97a0-7ac2b083d35e) – Voorbeeld van een filterfunctie met DOM-manipulatie.  
+- [Grid en Flexbox demo]()
+
 
 </details>
