@@ -291,7 +291,7 @@ Wat minder goed ging, was het stylen met nth-of-type selectors. Dit was erg verw
 
 
   ### Dit ging goed/Heb ik geleerd: 
- Tijdens het maken van mijn website heb ik geleerd over het gebruik van nth-of-type selectors. In het begin was het lastig, omdat je hiermee elementen selecteert op basis van hun positie binnen een bepaald type, zoals het tweede <section> of derde <li>. Dit was vooral handig omdat ik zo min mogelijk classes mocht gebruiken.
+ Tijdens het maken van mijn website heb ik geleerd over het gebruik van nth-of-type selectors. In het begin was het lastig, omdat je hiermee elementen selecteert op basis van hun positie binnen een bepaald type, zoals het tweede section of derde li. Dit was vooral handig omdat ik zo min mogelijk classes mocht gebruiken.
 
 
   <img src="readme-images/nth-of-type.png" width="375px" alt="top">
