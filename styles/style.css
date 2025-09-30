@@ -7,19 +7,15 @@
 	box-sizing: border-box;
 }
 
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
 	--color-text: #f6efef;
 	--color-background: #1b1b20;
+	--font-medium: 1em;
+	--font-family-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
 
 
 
@@ -27,18 +23,34 @@
 /* JOUW STYLING */
 /****************/
 
+/*Home Pagina Header*/
 body {
-	margin: 0;
 	background-color: var(--color-background);
 	color: var(--color-text);
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: var(--font-family-main);
 }
 
 header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000;
+	transition: transform 0.3s ease;
 	background-color: var(--color-background);
 }
 
+header.hidden {
+	transform: translateY(-100%);
+}
 
+main {
+	padding-top: 4em;
+}
+
+
+/* Filter */
 nav ul {
 	display: flex;
 	list-style: none;
@@ -55,22 +67,17 @@ nav a {
 	flex-direction: column;
 	align-items: center;
 	text-decoration: none;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: var(--font-family-main);
 	color: grey;
 }
 
 nav img {
-	width: 1.5em;
+	width: 2em;
 	height: auto;
 }
 
-time {
-	color: #f39200;
-	font-weight: 500;
-	font-family: 'sans-serif';
-}
 
-
+/* Home Pagina - banner artiest */
 section:nth-of-type(1) {
 	display: flex;
 	flex-direction: column;
@@ -82,13 +89,14 @@ section:nth-of-type(1) img {
 	width: 100%;
 	height: auto;
 	display: block;
-	filter: blur(1.5px)
+	filter: blur(1.5px);
 }
 
 section:nth-of-type(1) h1 {
 	position: absolute;
 	left: 10rem;
 	top: 18rem;
+	color: var(--color-text);
 }
 
 section:nth-of-type(1)>p {
@@ -96,6 +104,7 @@ section:nth-of-type(1)>p {
 	left: 8em;
 	top: 21rem;
 	color: rgb(79, 76, 76);
+	font-weight: 500;
 }
 
 section:nth-of-type(1)>button {
@@ -108,10 +117,10 @@ section:nth-of-type(1)>button {
 }
 
 
+/* Home Pagina - nieuw */
 section:nth-of-type(2) {
-	margin-bottom: 3em;
+	margin-bottom: 6.5em;
 }
-
 
 section:nth-of-type(2) ul {
 	display: flex;
@@ -126,7 +135,7 @@ section:nth-of-type(2) ul {
 	margin: 0;
 }
 
-section:nth-of-type(2) li {
+.home section:nth-of-type(2) li {
 	flex: 0 0 auto;
 	width: 200px;
 	height: 250px;
@@ -136,27 +145,23 @@ section:nth-of-type(2) li {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	align-items: center;
 	padding: 0.6em;
-	color: white;
-	text-align: center;
+	color: var(--color-text);
 	scroll-snap-align: center;
 }
 
-
-section:nth-of-type(2) li:first-of-type {
-	background-image: url("../images/theStreamers.png");
+.home section:nth-of-type(2) li:first-of-type {
+	background-image: url("../images/cho.png");
 }
 
-section:nth-of-type(2) li:nth-of-type(2) {
+.home section:nth-of-type(2) li:nth-of-type(2) {
 	background-image: url("../images/lauraPausini.png");
 }
 
-section:nth-of-type(2) li:nth-of-type(3) {
+.home section:nth-of-type(2) li:nth-of-type(3) {
 	background-image: url("../images/laufey.webp");
 }
 
-/* Tekststijl in de kaarten */
 section:nth-of-type(2) li time {
 	font-size: 0.85em;
 	color: #f39200;
@@ -172,19 +177,69 @@ section:nth-of-type(2) li h4 {
 
 section:nth-of-type(2) li p {
 	font-size: 0.9em;
-	color: #d1d1d1;
+	color: var(--color-text);
 	margin: 0;
 }
 
 
+/* Home Pagina - Uitgelicht */
 main section:nth-of-type(3) {
-	border: 5px solid #383434;
+	border: 4px solid #383434;
 	border-radius: 30px;
 	padding: 0.5em;
-	min-width: 200px;
+	min-width: 10em;
 	text-align: center;
 	scroll-snap-align: center;
 	background-color: #383434;
+}
+
+section:nth-of-type(3) h2 {
+	text-align: center;
+	margin-top: -2em;
+	font-size: 2em;
+	color: var(--color-text);
+	font-family: var(--font-family-main);
+	font-weight: 400;
+}
+
+section:nth-of-type(3) h3 {
+	text-align: left;
+	margin-left: 1em;
+	font-weight: 500;
+	font-family: var(--font-family-main);
+}
+
+section:nth-of-type(3) p {
+	color: #a09a90;
+	text-align: left;
+	margin-left: 1em;
+	font-family: var(--font-family-main);
+	font-weight: 400;
+}
+
+section:nth-of-type(3) nav {
+	text-align: left;
+	margin-right: 15em;
+}
+
+section:nth-of-type(3) nav a {
+	color: #f39200;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/* Home Pagina - Aankomende */
+.home section:nth-of-type(4) li:first-of-type {
+	background-image: url("../images/cho.png");
+}
+
+.home section:nth-of-type(4) li:nth-of-type(2) {
+	background-image: url("../images/volbeat.png");
+}
+
+.home section:nth-of-type(4) li:nth-of-type(3) {
+	background-image: url("../images/parcels.png");
 }
 
 section:nth-of-type(4) ul {
@@ -210,26 +265,10 @@ section:nth-of-type(4) li {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	align-items: center;
 	padding: 0.6em;
-	color: white;
-	text-align: center;
+	color: var(--color-text);
 	scroll-snap-align: center;
 }
-
-
-section:nth-of-type(4) li:first-of-type {
-	background-image: url("../images/cho.png");
-}
-
-section:nth-of-type(4) li:nth-of-type(2) {
-	background-image: url("../images/lauraPausini.png");
-}
-
-section:nth-of-type(4) li:nth-of-type(3) {
-	background-image: url("../images/laufey.webp");
-}
-
 
 section:nth-of-type(4) li time {
 	font-size: 0.85em;
@@ -238,23 +277,30 @@ section:nth-of-type(4) li time {
 	margin-bottom: 0.2em;
 }
 
-section:nth-of-type(4) li h4 {
-	font-size: 1.2em;
-	font-weight: 700;
+section:nth-of-type(4) h4 {
 	margin: 0.2em 0;
 }
 
+section:nth-of-type(4) h2 {
+	color: var(--color-text);
+	font-family: var(--font-family-main);
+	font-weight: 400;
+
+}
+
 section:nth-of-type(4) li p {
-	font-size: 0.9em;
-	color: #d1d1d1;
+	color: var(--color-text);
 	margin: 0;
 }
 
+
+/* Home Pagina - onze favorieten */
 section:nth-of-type(5) {
 	background-color: #393943;
 	border-radius: 20px;
 	padding: 1.5em;
 	margin: 1em;
+	margin-top: 5em;
 }
 
 section:nth-of-type(5) li {
@@ -275,31 +321,48 @@ section:nth-of-type(5) ul {
 	margin: 0;
 }
 
-section:nth-of-type(5)>h4 {
-	color: white;
-	font-size: 1.5em;
-	margin: 0.3em 0 1em;
+section:nth-of-type(5) h3 {
+	font-family: var(--font-family-main);
+	font-weight: 600;
+	font-size: larger;
+	align-items: start;
+}
+
+section:nth-of-type(5) h4 {
+	font-family: var(--font-family-main);
+	font-weight: 400;
+	font-size: larger;
+}
+
+section:nth-of-type(5) time {
+	font-size: small;
+	color: #f39200;
+	font-family: var(--font-family-main);
+	font-weight: 500;
+	margin-top: 2em;
 }
 
 
+/* Home Pagina - ontdek Ziggo Dome */
 section:nth-of-type(5) li img {
 	width: 100px;
 	height: auto;
 	border-radius: 10px;
-	flex-shrink: 0;
 }
 
 section:nth-of-type(5) button {
 	border-radius: 3em;
 	color: rgb(44, 98, 152);
+	font-weight: var(--font-medium);
 	padding: 10px;
-	background-color: white;
 }
 
-section:nth-of-type(5)>p {
+section:nth-of-type(5) p {
 	color: #f39200;
 	font-size: 1em;
 	margin: 0;
+	font-family: var(--font-family-main);
+	font-weight: 600;
 }
 
 section:nth-of-type(5) .text {
@@ -310,26 +373,41 @@ section:nth-of-type(5) .text {
 }
 
 
-section:nth-of-type(6)>h2 {
+/* Home Pagina - ontdek Ziggo Dome */
+section:nth-of-type(6) {
+	position: relative; 
+  }
+  
+  section:nth-of-type(6) button {
+	position: absolute;
+	bottom: 10px;   
+	right: 10px;    
+	border-radius: 3em;
+	color: rgb(44, 98, 152);
+	padding: 10px 20px;
+	color: var(--color-text);
+  }
+  
+section:nth-of-type(6) h2 {
 	font-weight: 400;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: var(--font-family-main);
 }
 
-section:nth-of-type(6)>p {
+section:nth-of-type(6) p {
 	font-weight: 100;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-family-main);
 	color: #b1b1b1;
 	font-size: medium;
+	margin-left: 0.5em;
 }
 
-section:nth-of-type(6) iframe {
-	width: 100%;
-	height: auto;
-	aspect-ratio: 16 / 9;
-	/* behoud juiste verhoudingen */
+section:nth-of-type(6) button {
+	border-radius: 3em;
+	color: rgb(44, 98, 152);
+	padding: 10px;
 }
 
-iframe {
+video {
 	max-width: 100%;
 	border-style: hidden;
 }
@@ -339,6 +417,7 @@ footer section {
 }
 
 
+/* Home Pagina - footer */
 footer section:nth-of-type(1) ul {
 	list-style: none;
 	padding: 0;
@@ -352,26 +431,24 @@ footer section:nth-of-type(1) li {
 	align-items: flex-start;
 }
 
-  
 footer section:nth-of-type(1) li p {
 	margin: 0.5em;
 	padding-left: 1em;
-	font-size: small;
-	font-size: medium;
+	color: var(--color-text);
 }
 
 
+/* Home Pagina - footer iconen */
 footer section:nth-of-type(2) {
 	display: flex;
 	justify-content: start;
 	gap: 1em;
 	margin-top: 3em;
+	height: 3em;
 }
 
-footer section:nth-of-type(2) {
-	height: 50px;
-}
 
+/* overige footer*/
 footer section:nth-of-type(3) ul {
 	list-style: none;
 	padding: 0;
@@ -388,10 +465,12 @@ footer section:nth-of-type(3) li {
 footer section:nth-of-type(3) li p {
 	margin: 0.5em;
 	padding-left: 1em;
-	font-size: small;
 	font-size: medium;
+	color: var(--color-text);
 }
 
+
+/* Home Pagina - footer sponsors */
 footer section:nth-of-type(4) {
 	display: flex;
 	justify-content: start;
@@ -404,69 +483,211 @@ footer section:nth-of-type(4) img {
 	height: 28px;
 }
 
-.agenda section:nth-of-type(1) h2{
-	text-align: left;
-	margin-left: 1em;
+
+/* Agenda Pagina - filter */
+.filter-buttons {
+	display: flex;
+	gap: 0.5em;
+	overflow-x: auto;
+	list-style: none;
+	padding-left: 1em;
+	margin-bottom: 2em;
 }
 
-
-.agenda section:nth-of-type(1) button {
+.filter-buttons li button {
 	padding: 0.5em 1em;
 	border-radius: 20px;
-	border: #fafafa;
+	border: none;
 	background-color: #4d4d50;
-	color: white;
-	padding: 0.5em 0.5em;
-	font-size: 1em;
+	color: var(--color-text);
+	cursor: pointer;
+	white-space: nowrap;
+	transition: background-color 0.2s;
 }
 
-.agenda section:nth-of-type(1) ul {
+.filter-buttons li button.active {
+	background-color: #f39200;
+	color: var(--color-text);
+}
+
+.agenda section:nth-of-type(1) h2 {
 	display: flex;
-	overflow: auto;
-	scroll-snap-type: x mandatory;
-	scroll-behavior: smooth;
-	list-style: none;
-	scrollbar-width: none;
-	overscroll-behavior-x: contain;
-	gap: 1em;
+	margin-right: 11em;
+	font-family: var(--font-family-main);
+	font-weight: 400;
 }
 
+
+/* Agenda Pagina - Artiesten */
 .agenda section:nth-of-type(2) ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 1em;
+	padding: 0;
+}
+
+.agenda section:nth-of-type(2) ul li {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: auto 1fr;
+	gap: 1em;
+	position: relative;
+	width: 90%;
+	border-radius: 4em ;
+	align-items: center;
+	text-align: center;
+}
+
+.agenda section:nth-of-type(2) ul li img {
+    border-radius: 15px;
+	grid-column: 2 / -1;
+	width: 100%;
+	object-fit: cover;
+}
+
+.agenda section:nth-of-type(2) ul li time {
+	grid-column: 1;
+	grid-row: 1;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	right: 19em;
+	width: 6em;
+}
+
+.agenda section:nth-of-type(2) ul li h4 {
+	grid-row: 1;
+	grid-column: 2;
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 10em;
+	right: 1em;
+	text-shadow: 1px 1px 4px rgb(0, 0, 0, 0.7);
+	z-index: 2;
+}
+
+.agenda section:nth-of-type(2) ul li p {
+	grid-row: 1;
+	grid-column: 2;
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 15em;
+	right: 2em;
+	text-shadow: 1px 1px 4px rgb(0, 0, 0, 0.7);
+	z-index: 2;
+	color: #f39200;
 }
 
 
+/* Agenda time styling */
+section ul li time span:nth-child(1) {
+	font-size: 2em;
+	font-weight: bold;
+	color: var(--color-text);
+	line-height: 1;
+}
 
+section ul li time span:nth-child(2) {
+	font-size: 1em;
+	text-transform: uppercase;
+	color: #f39200;
+}
 
-
-
-
+section ul li time span:nth-child(3) {
+	font-size: 1em;
+	color: var(--color-text);
+	font-weight: 300;
+}
 
 div {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 div img {
-	width: 6em;
+	width: 5em;
 }
 
-/*@keyframes draaien(naam geven) {
-	0%{
-	transform:rotate (0deg);
-}
-	50%{
-tranformation:rotate (180deg)
-}
-	100%
-	transform: rotate (360deg);
+/*Animaties*/
+
+/* Draaiend logo*/
+div img[alt="ziggoLogo"] {
+	width: 100px;
+	animation: spin 4s linear infinite;
 }
 
- html <p>emoji<p>
-aanspreken met p:hover 
-display:inline-block staat op eigen plek
-animation-timing-function:linear/ constante snelheid
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* fade in artiesten */
+.agenda section:nth-of-type(2) ul li img {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.agenda section:nth-of-type(2) ul li.visible img {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Slideshow */
+.slideshow-container {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	height: 300px;
+	margin-top: 1em;
+	overflow: hidden;
+}
+
+.slideshow-container img {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transition: all 0.8s ease-in-out;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.slideshow-container img.active {
+	left: 0;
+	opacity: 1;
+	z-index: 2;
+}
+
+.slideshow-container img.prev {
+	left: -100%;
+	opacity: 0;
+	z-index: 1;
+}
+
+/* Lettergrootte */
+.font-size-controls {
+	margin-bottom: 1em;
+	background-color: orange;
+}
+
+
+.font-size-controls button {
+	font-size: 1em;
+	padding: 0.3em 0.6em;
+	margin-right: 0.5em;
+	color: #000000;
+	border-radius: 4em;
+}
+
