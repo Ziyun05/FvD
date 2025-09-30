@@ -97,13 +97,15 @@ section:nth-of-type(1) h1 {
 	left: 10rem;
 	top: 18rem;
 	color: var(--color-text);
+	text-shadow: #000000;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 section:nth-of-type(1)>p {
 	position: absolute;
 	left: 8em;
 	top: 21rem;
-	color: rgb(79, 76, 76);
+	color: rgb(62, 61, 61);
 	font-weight: 500;
 }
 
